@@ -53,6 +53,7 @@ footer {
     margin: 0;
     width: 100%;
     background: #ffffff;
+    padding: 1rem 0;
 }
 
 nav {
@@ -97,4 +98,11 @@ nav {
     padding: 1rem 0;
     max-width: 700px;
     width: 100%;
+}
+.main-page{
+    h1 {
+        font-size: 2em;
+        line-height: 1.1;
+        text-align: center;
+    }
 }
