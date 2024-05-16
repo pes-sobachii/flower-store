@@ -1,0 +1,100 @@
+@import "normalize.css";
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+    background: #ffffff;
+    height: 100%;
+}
+
+body {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: #ffffff;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    /*background-image: url("../assets/images/repeating-flower-image.png");*/
+    background-repeat: repeat;
+    background-size: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+main {
+    padding: 1rem 0;
+    width: 100%;
+    flex-grow: 1;
+}
+
+header {
+    margin: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+footer {
+    margin: 0;
+    width: 100%;
+    background: #ffffff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.navigation-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+}
+
+.logo{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #646cff;
+    background: -webkit-linear-gradient(#110707, #3134d2, #5e61f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contacts{
+    a {
+        font-weight: 500;
+    }
+    h1 {
+        text-align: center;
+    }
+}
+
+.map-container{
+    padding: 1rem 0;
+    max-width: 700px;
+    width: 100%;
+}
