@@ -1,9 +1,9 @@
 @import "normalize.css";
 
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     background: #ffffff;
     height: 100%;
 }
@@ -42,7 +42,7 @@ header {
     top: 0;
     z-index: 1000;
 
-    .container{
+    .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -57,13 +57,13 @@ footer {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
 }
 
-.navigation-menu{
+.navigation-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,7 +76,7 @@ nav {
     }
 }
 
-.logo{
+.logo {
     font-size: 1.5em;
     font-weight: 700;
     color: #646cff;
@@ -85,24 +85,86 @@ nav {
     -webkit-text-fill-color: transparent;
 }
 
-.contacts{
+.contacts {
     a {
         font-weight: 500;
     }
+
     h1 {
         text-align: center;
     }
 }
 
-.map-container{
+.map-container {
     padding: 1rem 0;
     max-width: 700px;
     width: 100%;
 }
-.main-page{
+
+.main-page {
     h1 {
         font-size: 2em;
         line-height: 1.1;
         text-align: center;
+    }
+}
+
+.flowers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.flower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        line-height: 1.1;
+        margin-bottom: 0;
+    }
+
+    .description {
+        flex-grow: 1;
+    }
+
+    .price {
+        font-size: 1.2em;
+        font-weight: 500;
+
+        span {
+            color: #d31f1f;
+            font-weight: 700;
+        }
+    }
+}
+
+.heading {
+    text-align: center;
+    padding: 1rem 0;
+
+    h1 {
+        font-size: 2em;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+    }
+    p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        max-width: 750px;
+        margin: 0 auto;
     }
 }
